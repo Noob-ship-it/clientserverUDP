@@ -1,1 +1,6 @@
-﻿  WSEchoClientUDPv6.c.vcxproj -> C:\Users\thomp\Documents\cs2690_Networking_2\Projects\Project3\WSEchoClientUDPv6\Debug\WSEchoClientUDPv6.c.exe
+﻿  WSEchoClientUDPv6.c
+C:\Users\thomp\Documents\GitHub\clientserverUDP\WSEchoClientUDPv6\WSEchoClientUDPv6.c(104,32): warning C4047: '=': 'int *' differs in levels of indirection from 'unsigned int'
+C:\Users\thomp\Documents\GitHub\clientserverUDP\WSEchoClientUDPv6\WSEchoClientUDPv6.c(113,43): warning C4047: 'function': 'char *' differs in levels of indirection from 'char (*)[65507]'
+C:\Users\thomp\Documents\GitHub\clientserverUDP\WSEchoClientUDPv6\WSEchoClientUDPv6.c(113,33): warning C4024: 'recvfrom': different types for formal and actual parameter 2
+C:\Users\thomp\Documents\GitHub\clientserverUDP\WSEchoClientUDPv6\WSEchoClientUDPv6.c(113,72): warning C4133: 'function': incompatible types - from 'sockaddr_in6 *' to 'sockaddr *'
+  WSEchoClientUDPv6.c.vcxproj -> C:\Users\thomp\Documents\GitHub\clientserverUDP\WSEchoClientUDPv6\Debug\WSEchoClientUDPv6.c.exe

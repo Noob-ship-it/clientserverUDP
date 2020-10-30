@@ -2,3 +2,5 @@ C:\Users\thomp\Documents\cs2690_Networking_2\Projects\Project3\WSEchoClientUDPv6
 C:\Users\thomp\Documents\cs2690_Networking_2\Projects\Project3\WSEchoClientUDPv6.c\Debug\WSEchoClientUDPv6.c.pdb
 C:\Users\thomp\Documents\cs2690_Networking_2\Projects\Project3\WSEchoClientUDPv6\Debug\WSEchoClientUDPv6.c.exe
 C:\Users\thomp\Documents\cs2690_Networking_2\Projects\Project3\WSEchoClientUDPv6\Debug\WSEchoClientUDPv6.c.pdb
+C:\Users\thomp\Documents\GitHub\clientserverUDP\WSEchoClientUDPv6\Debug\WSEchoClientUDPv6.c.exe
+C:\Users\thomp\Documents\GitHub\clientserverUDP\WSEchoClientUDPv6\Debug\WSEchoClientUDPv6.c.pdb

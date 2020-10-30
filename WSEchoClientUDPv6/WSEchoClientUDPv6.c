@@ -104,7 +104,7 @@ void main(int argc, char* argv[])
 		fromSize = sizeof(serverInfo);
 		
 		// Display ALL of the received message, in printable C string format.
-		while (bytesRead != msgLen) {
+		do {
 			struct sockaddr_in6 fromInfo;
 			int fromSize = sizeof(fromInfo);
 			memset(&fromInfo, 0, sizeof(fromInfo));
@@ -116,7 +116,7 @@ void main(int argc, char* argv[])
 				DisplayFatalErr("Receive failed.");
 			}
 
-			if (memcmp(&fromInfo.sin6_addr, &serverInfo.sin6_addr, sizeof(serverInfo.sin6_addr)) ) {
+			if (!memcmp(&fromInfo.sin6_addr, &serverInfo.sin6_addr, sizeof(serverInfo.sin6_addr)) ) {
 				bytesRead += byteTracker;
 				//routine 1: get entire string in 1 try:
 				if (byteTracker == msgLen) {
@@ -130,7 +130,7 @@ void main(int argc, char* argv[])
 				}
 				memset(rcvBuffer, 0, strlen(rcvBuffer));
 			}
-		}
+		} while (byteTracker == RCVBUFSIZ);
 		printf("\nBytes read: %d\n", bytesRead);
 	}
 	 //Close the TCP connection (send a FIN) & print appropriate message.
