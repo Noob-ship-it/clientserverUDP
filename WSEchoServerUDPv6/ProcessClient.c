@@ -9,7 +9,7 @@ void ProcessClient(SOCKET* clientSock) {
 	char clientBuffer[CLIENTBUFF + 1];
 	int receiver = 1;
 	while (receiver != 0) {
-		receiver = recvfrom(clientSock, clientBuffer, CLIENTBUFF, 0);
+		//receiver = recvfrom(clientSock, clientBuffer, CLIENTBUFF, 0);
 		if (receiver < 0) {
 			DisplayFatalErr("Receive failed.");
 		}

@@ -75,10 +75,12 @@ int main(int argc, char* argv[]) {
 		do {
 			recvfrom(serverSocket, msgBuffer, BUFFER, 0, (struct sockaddr*) & clientInfo, &clientInfoLen);
 			char ipv6Array[INET6_ADDRSTRLEN];
-
+			printf("receiving from %s Port: %i\n", inet_ntop(AF_INET6, &clientInfo.sin6_addr, ipv6Array, sizeof(ipv6Array)), clientInfo.sin6_port);
+			
 			const IN6_ADDR clientAddr = clientInfo.sin6_addr;
-			char* goodIp = inet_ntop(AF_INET6, &clientAddr, ipv6Array, sizeof(ipv6Array));
-			ProcessClient(&clientInfo);
+			printf("%s\n",msgBuffer);
+			printf("Sending back to client\n");
+			sendto(serverSocket, msgBuffer, strlen(msgBuffer), 0, (struct sockaddr*)&clientInfo, clientInfoLen);
 		} while (strlen(msgBuffer) == BUFFER);
 	}
 	// For the overall size of a data type or structure in bytes (like     

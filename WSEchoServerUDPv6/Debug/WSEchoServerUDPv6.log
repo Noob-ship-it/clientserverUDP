@@ -1,4 +1,3 @@
 ﻿  WSEchoServerUDPv6.c
-C:\Users\thomp\Documents\cs2690_Networking_2\Projects\Project3\WSEchoServerUDPv6\WSEchoServerUDPv6.c(81,29): warning C4133: 'function': incompatible types - from 'sockaddr_in6 *' to 'SOCKET *'
-C:\Users\thomp\Documents\cs2690_Networking_2\Projects\Project3\WSEchoServerUDPv6\WSEchoServerUDPv6.c(80,1): warning C4090: 'initializing': different 'const' qualifiers
-  WSEchoServerUDPv6.vcxproj -> C:\Users\thomp\Documents\cs2690_Networking_2\Projects\Project3\WSEchoServerUDPv6\Debug\WSEchoServerUDPv6.exe
+C:\Users\thomp\Documents\GitHub\clientserverUDP\WSEchoServerUDPv6\WSEchoServerUDPv6.c(80,19): warning C4101: 'clientAddr': unreferenced local variable
+  WSEchoServerUDPv6.vcxproj -> C:\Users\thomp\Documents\GitHub\clientserverUDP\WSEchoServerUDPv6\Debug\WSEchoServerUDPv6.exe
